@@ -1,6 +1,7 @@
 package SortMethods;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,7 +9,9 @@ public class Main {
         int[] original = new int[tam];
 
         for (int i = 0; i < tam; i++) {
-            original[i] = tam - i;
+            // original[i] = tam - i; // decrescente
+            // original[i] = i; // crescente
+            // original[i] = random.nextInt(0, 100000000); // aleatório
         }
 
         runSort("Insertion Sort", original, InsertionSort::sort);
